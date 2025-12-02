@@ -1,0 +1,23 @@
+/* Espaciado general */
+body {
+    padding-bottom: 50px;
+}
+
+/* Inputs correctos/incorrectos */
+.correcto {
+    border: 2px solid green !important;
+}
+
+.incorrecto {
+    border: 2px solid red !important;
+}
+
+/* Mensajes de error */
+.text-danger {
+    font-size: 14px;
+}
+
+/* Botones con margen */
+button {
+    min-width: 150px;
+}

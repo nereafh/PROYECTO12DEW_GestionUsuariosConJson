@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Simulado - Gestión de Usuarios</title>
+
+    <!-- Bootstrap CSS (solo CSS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-4">Gestión de Usuarios - Simulacro de Examen</h1>
+
+        <!-- FORMULARIO -->
+        <form id="formUsuario" class="p-4 border rounded bg-white">
+
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="form-control">
+                <p id="errorNombre" class="text-danger small"></p>
+            </div>
+
+            <!-- Apellido -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="apellido">Apellido:</label>
+                <input type="text" id="apellido" class="form-control">
+                <p id="errorApellido" class="text-danger small"></p>
+            </div>
+
+            <!-- DNI -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="dni">DNI:</label>
+                <input type="text" id="dni" class="form-control">
+                <p id="errorDni" class="text-danger small"></p>
+            </div>
+
+            <!-- Fecha -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="fecha">Fecha de Nacimiento:</label>
+                <input type="text" id="fecha" class="form-control" placeholder="dd/mm/aaaa">
+                <p id="errorFecha" class="text-danger small"></p>
+            </div>
+
+            <!-- Código postal -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="cp">Código Postal:</label>
+                <input type="text" id="cp" class="form-control">
+                <p id="errorCp" class="text-danger small"></p>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="email">Email:</label>
+                <input type="email" id="email" class="form-control">
+                <p id="errorEmail" class="text-danger small"></p>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" class="form-control">
+                <p id="errorTelefono" class="text-danger small"></p>
+            </div>
+
+            <!-- Móvil -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="movil">Móvil:</label>
+                <input type="text" id="movil" class="form-control">
+                <p id="errorMovil" class="text-danger small"></p>
+            </div>
+
+            <!-- Tarjeta -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="tarjeta">Tarjeta:</label>
+                <input type="text" id="tarjeta" class="form-control">
+                <p id="errorTarjeta" class="text-danger small"></p>
+            </div>
+
+            <!-- IBAN -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="iban">IBAN:</label>
+                <input type="text" id="iban" class="form-control">
+                <p id="errorIban" class="text-danger small"></p>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="contrasena">Contraseña:</label>
+                <input type="text" id="contrasena" class="form-control">
+                <p id="errorContrasena" class="text-danger small"></p>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="d-flex flex-wrap gap-2">
+                <button type="button" id="guardarLocal" class="btn btn-primary">Publicar localmente</button>
+                <button type="button" id="obtenerLocal" class="btn btn-secondary">Obtener localmente</button>
+                <button type="button" id="guardarSesion" class="btn btn-success">Guardar sesión</button>
+                <button type="button" id="obtenerJSON" class="btn btn-info">Obtener desde JSON</button>
+            </div>
+        </form>
+
+        <!-- DIV PARA MENSAJES -->
+        <div id="mensajes" class="mt-4"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
