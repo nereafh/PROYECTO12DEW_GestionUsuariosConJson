@@ -1,6 +1,6 @@
-// ============================================================
+//localStorage.clear();
+
 // OBJETO QUE CONTIENE LAS EXPRESIONES REGULARES
-// ============================================================
 const usuarioRegex = {
     nombre: /^[A-Za-zÁÉÍÓÚÑ ]{2,20}$/,
     apellido: /^([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)+$/,          
@@ -15,10 +15,7 @@ const usuarioRegex = {
     contrasena: /^[A-Za-z0-9]{6,20}$/
 };
 
-// ============================================================
 // FUNCIONES
-// ============================================================
-
 // Función para validar un campo
 function validarCampo(idInput, idError, regex) {
     const input = document.querySelector(idInput);
@@ -96,10 +93,7 @@ function mostrarMensaje(texto) {
     div.innerHTML = "<p>" + texto + "</p>";
 }
 
-// ============================================================
 // EVENTOS
-// ============================================================
-
 // Publicar localmente
 document.querySelector("#guardarLocal").addEventListener("click", () => {
     if (!validarTodos()) return;
